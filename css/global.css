@@ -1,5 +1,4 @@
-
-h1,h4 {
+/* h1,h4 {
   color:#E13A63;
 }
 
@@ -44,4 +43,44 @@ body {
 
 .main-content {
   margin: 0 80px;
+} */
+
+/* BOOTSTRAP ATTEMPT */
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+.nav-logo-1 {
+  width: 70px;
+}
+
+.nav, .navbar {
+  background-color: black;
+  border-radius: 0;
+}
+
+.nav-logo-2 {
+  width: 70px;
+  /* margin-top: 7px; */
+}
+
+.nav li a {
+  color: grey;
+}
+
+.nav li a:hover {
+  color: white;
+}
+
+.nav li .active {
+  color: white;
+}
+
+/* FIGURE OUT HOW TO MAKE NAV LINK HOVER BLACK... */
+.navbar-nav li a:hover {
+  background-color: black;
 }

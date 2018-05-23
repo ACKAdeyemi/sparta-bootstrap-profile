@@ -4,56 +4,106 @@
   <title>Stephen Reid</title>
 
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+  <!-- BOOTSTRAP and JQUERY -->
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="css/bootstrap-3.3.7-dist/js/bootstrap.js" charset="utf-8"></script>
+
+  <!-- OTHER CSS - ALWAYS BELOW BOOTSTRAP-->
   <link rel="stylesheet" type="text/css" href="css/global.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
+
+
 <body>
+  <!-- <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://www.spartaglobal.com/">
+          <img alt="Brand" class="nav-logo-1" src="images/sparta-global-logo-white.svg">
+        </a>
+      </div>
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Profile <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Sparta Global</a></li>
+      </ul>
+  </nav> -->
+
   <nav class="navbar">
     <div>
-      <div>
-        <a href="https://www.spartaglobal.com/"><img id="logo" src="images/sparta-global-logo-white.svg"></a>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://www.spartaglobal.com/"><img id="logo" class="nav-logo-2" src="images/sparta-global-logo-white.svg"></a>
       </div>
 
       <div>
-        <ul>
-          <li>
-            <a href="index.html">Profile</a>
-          </li>
-          <li>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a href="https://www.spartaglobal.com/">Sparta Global</a>
-          </li>
+        <ul class="nav navbar-nav">
+          <li><a class="active" href="index.html">Profile <span class="sr-only">(current)</span></a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="https://www.spartaglobal.com/">Sparta Global</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="main-content">
+  <div class="container">
     <header>
-      <div class="left">
-        <img id="headshot" src="images/headshot.jpg">
-      </div>
-
-      <div class="right">
-        <h1>Stephen Reid</h1>
-        <h2>Devops Engineer</h2>
-
-        <div>
-          <p>University of Portsmouth</p>
-          <p>BSc Economics, Finance and Banking 2:1</p>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <a href="#">
+            <img class="img-circle img-responsive" src="images/headshot.jpg" alt="headshot">
+          </a>
         </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <h1>Stephen Reid</h1>
+          <h2>Devops Engineer</h2>
 
-        <div>
-          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia. Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
-          <p>Maecenas mattis nunc mauris, id vulputate lorem egestas ac. In quis ante elit. Curabitur blandit arcu cursus, eleifend tellus ut, cursus felis. Mauris sit amet placerat lacus, sit amet interdum dolor. Pellentesque viverra volutpat rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <div>
+            <p>University of Portsmouth</p>
+            <p>BSc Economics, Finance and Banking 2:1</p>
+          </div>
+
+          <div>
+            <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia. Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+            <p>Maecenas mattis nunc mauris, id vulputate lorem egestas ac. In quis ante elit. Curabitur blandit arcu cursus, eleifend tellus ut, cursus felis. Mauris sit amet placerat lacus, sit amet interdum dolor. Pellentesque viverra volutpat rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="right">
-      <div>
+    <section class="row ">
+      <div class="col-md-6">
+        <h3>Education</h3>
+
+        <h4>University of Surrey, Electronic Engineering, 2002 - 2005 </h4>
+        <h5>Year 1</h5>
+        <ul>
+          <li>List your modules</li>
+          <li>List your modules</li>
+          <li>List your modules</li>
+        </ul>
+
+        <h5>Year 2</h5>
+        <ul>
+          <li>List your modules</li>
+          <li>List your modules</li>
+          <li>List your modules</li>
+        </ul>
+
+        <h5>Year 3</h5>
+        <ul>
+          <li>List your modules</li>
+          <li>List your modules</li>
+          <li>List your modules</li>
+        </ul>
+
+        <h5>Final Project</h5>
+        <p>Explain your final project and your part in it.</p>
+      </div>
+      <div class="col-md-6">
         <div>
           <h3>Additional Skills</h3>
           <ul>
@@ -71,7 +121,6 @@
         </div>
         <div>
           <h3>Employment History</h3>
-
           <div>
             <h5>Company</h5>
             <small>Jan 2006 - May 2019</small>
@@ -90,37 +139,8 @@
       </div>
     </section>
 
-    <section class="left">
-      <h3>Education</h3>
-
-      <h4>University of Surrey, Electronic Engineering, 2002 - 2005 </h4>
-      <h5>Year 1</h5>
-      <ul>
-        <li>List your modules</li>
-        <li>List your modules</li>
-        <li>List your modules</li>
-      </ul>
-
-      <h5>Year 2</h5>
-      <ul>
-        <li>List your modules</li>
-        <li>List your modules</li>
-        <li>List your modules</li>
-      </ul>
-
-      <h5>Year 3</h5>
-      <ul>
-        <li>List your modules</li>
-        <li>List your modules</li>
-        <li>List your modules</li>
-      </ul>
-
-      <h5>Final Project</h5>
-      <p>Explain your final project and your part in it.</p>
-    </section>
-
-    <section class="experience">
-      <div>
+    <section class="row experience">
+      <div class="col-lg-12">
         <h3>Academy Experience</h3>
 
         <h4>Business Skills</h4>
